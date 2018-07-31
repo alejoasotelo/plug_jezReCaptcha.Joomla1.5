@@ -16,42 +16,28 @@
 	<name>System - JEZ reCAPTCHA Integrator</name>
 	<author>JoomlaEZ.com</author>
 	<creationDate>December 2008</creationDate>
+	<modificationDate>31 Julio 2018</modificationDate>
 	<copyright>Copyright (C) 2008 JoomlaEZ.com. All rights reserved</copyright>
 	<license>Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported</license>
-	<authorEmail>support@joomlaez.com</authorEmail>
-	<authorUrl>http://joomlaez.com/</authorUrl>
-	<version>1.0.0</version>
+	<authorEmail>soporte@alejosotelo.com.ar</authorEmail>
+	<authorUrl>https://alejosotelo.com.ar/</authorUrl>
+	<version>1.1.0</version>
 	<description>JEZ reCAPTCHA Integrator implementation plugin.</description>
 	<files>
 		<filename plugin="jezReCaptcha">jezReCaptcha.php</filename>
 		<filename>jezReCaptcha.xml</filename>
-		<filename>jezReCaptcha/helper.php</filename>
-		<filename>jezReCaptcha/index.html</filename>
-		<filename>jezReCaptcha/logo.png</filename>
-		<filename>jezReCaptcha/recaptcha-php-1.10/example-captcha.php</filename>
-		<filename>jezReCaptcha/recaptcha-php-1.10/example-mailhide.php</filename>
-		<filename>jezReCaptcha/recaptcha-php-1.10/index.html</filename>
-		<filename>jezReCaptcha/recaptcha-php-1.10/LICENSE</filename>
-		<filename>jezReCaptcha/recaptcha-php-1.10/README</filename>
-		<filename>jezReCaptcha/recaptcha-php-1.10/recaptchalib.php</filename>
-		<filename>jezReCaptcha/xmlElements/categories.php</filename>
-		<filename>jezReCaptcha/xmlElements/cdata.php</filename>
-		<filename>jezReCaptcha/xmlElements/checkbox.php</filename>
-		<filename>jezReCaptcha/xmlElements/editor.php</filename>
-		<filename>jezReCaptcha/xmlElements/index.html</filename>
-		<filename>jezReCaptcha/xmlElements/intro.php</filename>
-		<filename>jezReCaptcha/xmlElements/lists.php</filename>
-		<filename>jezReCaptcha/xmlElements/sections.php</filename>
+		<folder>jezReCaptcha</folder>
+		<folder>vendor</folder>
 	</files>
 	<languages>
 		<language tag="en-GB">en-GB.plg_system_jezReCaptcha.ini</language>
 		<language tag="es-ES">es-ES.plg_system_jezReCaptcha.ini</language>
 	</languages>
 	<params addpath="/plugins/system/jezReCaptcha/xmlElements">
-		<param name="@cdata" type="cdata" default="" label="JEZ reCAPTCHA Integrator implementation Joomla! 1.5 plugin v1.0.0" url="http://joomlaez.com/" image="../plugins/system/jezReCaptcha/logo.png">
+		<param name="@cdata" type="cdata" default="" label="JEZ reCAPTCHA Integrator implementation Joomla! 1.5 plugin v1.1.0" url="http://joomlaez.com/" image="../plugins/system/jezReCaptcha/logo.png">
 		<![CDATA[
 			<p>
-				<strong>JEZ reCAPTCHA Integrator implementation Joomla! 1.5 plugin</strong>, or <strong>JEZ reCAPTCHA Integrator</strong> for short, is a
+				<strong>JEZ reCAPTCHA Integrator implementation Joomla! 1.5 plugin</strong>, or <strong>JEZ reCAPTCHA v3 Integrator</strong> for short, is a
 				system plugin which implement <a href="http://recaptcha.net/" title="reCAPTCHA's home page" target="_blank">
 				reCAPTCHA</a> for Joomla! 1.5 site.
 			</p>
@@ -116,9 +102,9 @@ $mainframe->triggerEvent('onCaptchaConfirm');</pre>
 			<option value="0">No</option>
 		</param>
 		<param name="@spacer" type="spacer" default=" " label="" description="" />
-		<param name="theme" type="radio" default="default" label="Theme" description="">
-			<option value="default">Default</option>
-			<option value="custom">Custom</option>
+		<param name="theme" type="radio" default="light" label="Theme" description="">
+			<option value="light">Claro</option>
+			<option value="dark">Oscuro</option>
 		</param>
 	</params>
 </install>
