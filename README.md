@@ -6,6 +6,6 @@ Este plugin es una adaptación del plugin jezReCaptcha para funcionar en Joomla 
 ¿Cómo se instala?
 ------------------------------
 
-Se descarga el repositorio, se comprimen todos los los archivos y carpetas y listo. Se instala desde el gestor de instalación de joomla.
+Se descarga el repositorio, se ejecuta "composer install" para instalar las librerias, se comprimen todos los archivos y carpetas y luego se instala el Zip generado como un plugin más desde el gestor de instalación de joomla.
 
 Funciona con PHP >= 5.5
